@@ -51,6 +51,9 @@ const gameStart = {
         //將需要碰撞的物件綁在一起
         this.physics.add.collider(this.player, this.footer);
         
+        //播放動畫
+        this.player.anims.play('run', true);
+        
     },
     update: function(){
         this.bg1.tilePositionX += 4;
@@ -60,8 +63,6 @@ const gameStart = {
         this.bg5.tilePositionX += 4;
         this.footer.tilePositionX += 4;
 
-        //播放動畫
-        this.player.anims.play('run', true);
     }
 }
 
