@@ -48,7 +48,7 @@ const gameStart = {
         //設定動畫播放
         this.anims.create({
             key: 'run',
-            frames: this.anims.generateFrameNumbers('user', { start: 1, end: 6 }),
+            frames: this.anims.generateFrameNumbers('user', { start: 0, end: 5 }),
             frameRate: 10,
             repeat: -1
         })
